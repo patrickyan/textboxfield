@@ -551,7 +551,8 @@
 				$value = trim($data['value_formatted']);
 			}
 
-			if ($mode == 'unformatted' or $this->get('text_cdata') == 'yes') {
+			//if ($mode == 'unformatted' or $this->get('text_cdata') == 'yes') {
+			if ($this->get('text_cdata') == 'yes') {
 				$value = '<![CDATA[' . $value . ']]>';
 			}
 
